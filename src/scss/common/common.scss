@@ -1,0 +1,48 @@
+body {
+  background-color: #f8f8f8;
+  position: relative;
+
+  @media (min-width: $isDesktop) {
+    & {
+      display: grid;
+      width: 100%;
+      grid-template-areas:
+        'burger main'
+        'burger footer';
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.active-list {
+  &::before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 4px;
+    left: 0;
+    background: $secondDividerColor;
+  }
+}
+
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  margin: 0;
+  margin-right: 12px;
+
+  opacity: 1;
+  background: #dddddd;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #b5b6bc;
+}
+
+.expand-ico-down {
+  transform: rotate(180deg);
+}

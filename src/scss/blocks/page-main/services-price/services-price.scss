@@ -1,0 +1,36 @@
+.services-price {
+  &__title {
+    display: block;
+    padding: 16px;
+    margin-bottom: 16px;
+    font-family: $fontRegular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    background: $thirdColor;
+    color: $textColorSecond;
+  }
+
+  &__option {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 2.5%;
+    padding: 16px 18px;
+    font-family: $fontMedium;
+    font-size: 14px;
+    line-height: 16px;
+    color: $textColorSecond;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+
+  &__price {
+    transform: translate(-32%);
+  }
+
+  &__term {
+    transform: translate(-285%);
+  }
+}

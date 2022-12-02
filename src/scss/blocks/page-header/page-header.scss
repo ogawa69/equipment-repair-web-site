@@ -1,0 +1,103 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  background: $secondColor;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &:first-child:after {
+      content: '';
+      position: relative;
+      width: 2px;
+      height: 32px;
+      background: $dividerColor;
+      border-radius: 1px;
+    }
+  }
+
+  &__burger-button {
+    border: 0;
+    background-color: $secondColor;
+    padding: 0;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  &__option {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $isMobile) and (max-width: $isTablet) {
+    .page-header {
+      padding: 24px 16px;
+    }
+
+    &__call {
+      display: none;
+    }
+
+    &__chat {
+      display: none;
+    }
+
+    &__profile {
+      display: none;
+    }
+  }
+
+  @media (min-width: $isTablet) and (max-width: $isDesktop) {
+    &__wrap:first-child::after {
+      content: '';
+      position: relative;
+      width: 2px;
+      height: 32px;
+      background: $dividerColor;
+      border-radius: 1px;
+      order: -1;
+    }
+
+    &__burger {
+      order: -1;
+    }
+
+    &__list {
+      align-items: center;
+    }
+
+    &__option {
+      align-items: center;
+
+      &::before {
+        content: '';
+        position: relative;
+        width: 2px;
+        height: 32px;
+        background: $dividerColor;
+        border-radius: 1px;
+      }
+    }
+  }
+
+  @media (min-width: $isDesktop) {
+    & {
+      display: none;
+    }
+  }
+}

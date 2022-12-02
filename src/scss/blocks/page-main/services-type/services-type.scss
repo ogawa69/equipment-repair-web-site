@@ -1,0 +1,30 @@
+.services-type {
+  padding-bottom: 1px;
+
+  &__title {
+    display: block;
+    padding: 16px;
+    margin-bottom: 16px;
+    font-family: $fontRegular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    background: $thirdColor;
+    color: $textColorSecond;
+  }
+
+  &__show {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin-bottom: 34px;
+    font-family: $fontMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+}

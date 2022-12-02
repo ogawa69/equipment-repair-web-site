@@ -1,0 +1,151 @@
+.burger {
+  grid-area: burger;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+
+  &__modal {
+    order: -1;
+    min-width: 320px;
+    max-width: 320px;
+    background-color: $secondColor;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    margin-bottom: 2%;
+    background-color: $secondColor;
+  }
+
+  &__search {
+    margin-left: auto;
+  }
+
+  &__wrap {
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: $secondColor;
+  }
+
+  &__nav {
+    margin-bottom: 240px;
+  }
+
+  &__repair-link,
+  &__services-link,
+  &__corporation-link,
+  &__sellers-link,
+  &__partners-link,
+  &__manufacturer-link,
+  &__our-centers-link,
+  &__contacts-link {
+    display: block;
+    padding: 10px 24px;
+    padding-left: 0;
+    margin-bottom: 12px;
+    font-family: $fontMedium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    transition: 0.5s;
+  }
+
+  &__repair-link:hover,
+  &__services-link:hover,
+  &__corporation-link:hover,
+  &__sellers-link:hover,
+  &__partners-link:hover,
+  &__manufacturer-link:hover,
+  &__our-centers-link:hover,
+  &__contacts-link:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px rgba(4, 245, 253, 0.699);
+  }
+
+  &__contacts {
+    margin: auto 0;
+  }
+
+  &__call,
+  &__chat,
+  &__profile {
+    transition: 0.2s;
+  }
+
+  &__call:hover,
+  &__chat:hover,
+  &__profile:hover {
+    transform: scale(1.1);
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__email {
+    display: block;
+
+    margin-bottom: 12px;
+    font-family: $fontMedium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
+  &__phone-number {
+    display: block;
+    margin-bottom: 5px;
+    font-family: $fontBold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+  }
+
+  &__layout {
+    display: flex;
+    gap: 7px;
+  }
+
+  &__ru-radio,
+  &__eu-radio,
+  &__ch-radio {
+    position: absolute;
+    overflow: hidden;
+    height: 1px;
+    margin-bottom: 0;
+    padding: 0;
+    width: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    white-space: nowrap;
+  }
+
+  &__ru,
+  &__eu,
+  &__ch {
+    cursor: pointer;
+    font-family: $fontMedium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+}

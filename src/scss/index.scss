@@ -1,0 +1,26 @@
+@import '~normalize.css';
+@import './common/fonts.scss';
+@import './common/animations.scss';
+@import './common/reset.scss';
+@import './common/variables.scss';
+@import './common/swiper-bundle.min.scss';
+
+@import './blocks/page-header/page-header.scss';
+@import './blocks/feedback/feedback.scss';
+@import './blocks/request-call/request-call.scss';
+@import './blocks/burger/burger.scss';
+@import './blocks/page-main/page-main.scss';
+@import './blocks/page-main/nav-slider/nav-slider.scss';
+@import './blocks/page-main/about/about.scss';
+@import './blocks/page-main/logo-picture/logo-picture.scss';
+@import './blocks/page-main/services-brands/services-brands.scss';
+@import './blocks/page-main/services-brands/brands-slider/brands-slider.scss';
+@import './blocks/page-main/services-type/services-type.scss';
+@import './blocks/page-main/services-type/type-slider/type-slider.scss';
+@import './blocks/page-main/services-price/services-price.scss';
+@import './blocks/page-main/services-price/price-slider/price-slider.scss';
+@import './blocks/page-main/services-price/price-slider/price-table/price-table.scss';
+@import './blocks/page-footer/page-footer.scss';
+
+@import './common/common.scss';
+@import './common/media.scss';
